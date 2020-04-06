@@ -29,9 +29,19 @@
     <fragment
         android:id="@+id/gameOverFragment2"
         android:name="com.lwazir.androidtriviaapp.GameOverFragment"
-        android:label="GameOverFragment" />
+        android:label="GameOverFragment" >
+        <action
+            android:id="@+id/action_gameOverFragment2_to_gameFragment2"
+            app:destination="@id/gameFragment"
+            app:popUpTo="@id/titleFragment" />
+    </fragment>
     <fragment
         android:id="@+id/gameWonFragment"
         android:name="com.lwazir.androidtriviaapp.GameWonFragment"
-        android:label="GameWonFragment" />
+        android:label="GameWonFragment" >
+        <action
+            android:id="@+id/action_gameWonFragment_to_gameFragment"
+            app:destination="@id/gameFragment"
+            app:popUpTo="@id/titleFragment" />
+    </fragment>
 </navigation>
